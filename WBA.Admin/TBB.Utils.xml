@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TBB.Utils
+</name>
+</assembly>
+<members>
+<member name="M:TBB.Utils.Network.MapDrive(System.String,System.String,System.String,System.String)">
+	<summary>
+ Netzlaufwerk verbinden
+ </summary>
+	<param name="buchstabe">Laufwerksbuchstabe ( F: )</param>
+	<param name="freigabename">Freigabename ( \\meincomputer\meinefreigabe )</param>
+	<param name="username">Benutzer</param>
+	<param name="password">Passwort</param>
+</member><member name="M:TBB.Utils.Network.UnMapDrive(System.String,System.Boolean)">
+	<summary>
+ Netzlaufwerk trennen
+ </summary>
+	<param name="buchstabe">Laufwerksbuchstabe</param>
+	<param name="ForceDisconnect">True = Trennen erzwingen, False = bei offenen Dateien wird nicht getrennt</param>
+</member><member name="P:TBB.Utils.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TBB.Utils.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TBB.Utils.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

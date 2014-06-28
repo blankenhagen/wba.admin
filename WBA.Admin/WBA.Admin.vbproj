@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{080EADDD-BE5D-4E10-A309-91C5EF72199B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WBA.Admin.My.MyApplication</StartupObject>
+    <RootNamespace>WBA.Admin</RootNamespace>
+    <AssemblyName>WBA.Admin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WBA.Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WBA.Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>wba_admin_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TBB.Utils">
+      <HintPath>.\TBB.Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Security" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auftrag\FormAuftrag.Designer.vb">
+      <DependentUpon>FormAuftrag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Auftrag\FormAuftrag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auftrag\FormAuftragBearbeiten.Designer.vb">
+      <DependentUpon>FormAuftragBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Auftrag\FormAuftragBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messwerte\FormMesswerte.Designer.vb">
+      <DependentUpon>FormMesswerte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messwerte\FormMesswerte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klassen\Abschnitt.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Klassen\Benutzer.vb" />
+    <Compile Include="Allgemein\FormAnmeldung.Designer.vb">
+      <DependentUpon>FormAnmeldung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Allgemein\FormAnmeldung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bauteil\FormBauteil.Designer.vb">
+      <DependentUpon>FormBauteil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bauteil\FormBauteil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bauteil\FormBauteilBearbeiten.Designer.vb">
+      <DependentUpon>FormBauteilBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bauteil\FormBauteilBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bauteil\FormBauteilWarmbehandlung.Designer.vb">
+      <DependentUpon>FormBauteilWarmbehandlung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bauteil\FormBauteilWarmbehandlung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benutzer\FormBenutzer.Designer.vb">
+      <DependentUpon>FormBenutzer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Benutzer\FormBenutzer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benutzer\FormBenutzerAnlagenRollen.Designer.vb">
+      <DependentUpon>FormBenutzerAnlagenRollen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Benutzer\FormBenutzerAnlagenRollen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benutzer\FormBenutzerBearbeiten.Designer.vb">
+      <DependentUpon>FormBenutzerBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Benutzer\FormBenutzerBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allgemein\FormHistory.Designer.vb">
+      <DependentUpon>FormHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Allgemein\FormHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allgemein\FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Allgemein\FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klassen\Tools.vb" />
+    <Compile Include="Logging.vb" />
+    <Compile Include="Parameter\FormParameter.Designer.vb">
+      <DependentUpon>FormParameter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter\FormParameter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameter\FormParameterBearbeiten.Designer.vb">
+      <DependentUpon>FormParameterBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter\FormParameterBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameter\FormParameterDetailsBearbeiten.Designer.vb">
+      <DependentUpon>FormParameterDetailsBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter\FormParameterDetailsBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programm\FormProgrammAbschnittBearbeiten.Designer.vb">
+      <DependentUpon>FormProgrammAbschnittBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programm\FormProgrammAbschnittBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programm\FormProgramm.Designer.vb">
+      <DependentUpon>FormProgramm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programm\FormProgramm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programm\FormProgrammBearbeiten.Designer.vb">
+      <DependentUpon>FormProgrammBearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programm\FormProgrammBearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Allgemein\FormVorschriftKopieren.Designer.vb">
+      <DependentUpon>FormVorschriftKopieren.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Allgemein\FormVorschriftKopieren.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Control\ReleaseAndLock.Designer.vb">
+      <DependentUpon>ReleaseAndLock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\ReleaseAndLock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wbadminDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>wbadminDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Allgemein\FormAnmeldung.resx">
+      <DependentUpon>FormAnmeldung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auftrag\FormAuftrag.resx">
+      <DependentUpon>FormAuftrag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auftrag\FormAuftragBearbeiten.resx">
+      <DependentUpon>FormAuftragBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bauteil\FormBauteil.resx">
+      <DependentUpon>FormBauteil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bauteil\FormBauteilBearbeiten.resx">
+      <DependentUpon>FormBauteilBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bauteil\FormBauteilWarmbehandlung.resx">
+      <DependentUpon>FormBauteilWarmbehandlung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Benutzer\FormBenutzer.resx">
+      <DependentUpon>FormBenutzer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Benutzer\FormBenutzerAnlagenRollen.resx">
+      <DependentUpon>FormBenutzerAnlagenRollen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Benutzer\FormBenutzerBearbeiten.resx">
+      <DependentUpon>FormBenutzerBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Allgemein\FormHistory.resx">
+      <DependentUpon>FormHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Allgemein\FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messwerte\FormMesswerte.resx">
+      <DependentUpon>FormMesswerte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameter\FormParameter.resx">
+      <DependentUpon>FormParameter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameter\FormParameterBearbeiten.resx">
+      <DependentUpon>FormParameterBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameter\FormParameterDetailsBearbeiten.resx">
+      <DependentUpon>FormParameterDetailsBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programm\FormProgrammAbschnittBearbeiten.resx">
+      <DependentUpon>FormProgrammAbschnittBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programm\FormProgramm.resx">
+      <DependentUpon>FormProgramm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programm\FormProgrammBearbeiten.resx">
+      <DependentUpon>FormProgrammBearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Allgemein\FormVorschriftKopieren.resx">
+      <DependentUpon>FormVorschriftKopieren.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\ReleaseAndLock.resx">
+      <DependentUpon>ReleaseAndLock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="wbadminDataSet.xsc">
+      <DependentUpon>wbadminDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="wbadminDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>wbadminDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="wbadminDataSet.xss">
+      <DependentUpon>wbadminDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wbadmin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_left.bmp" />
+    <None Include="Resources\collapse_right.bmp" />
+    <None Include="Resources\OpenFolder.bmp" />
+    <Content Include="wba_admin_1.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

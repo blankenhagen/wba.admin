@@ -1,0 +1,1648 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WBA.Admin
+</name>
+</assembly>
+<members>
+<member name="M:WBA.Admin.FormBenutzer.FormBenutzer_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.ShowDialog(WBA.Admin.Benutzer)">
+	<summary>
+ Überladen für die Parameterübergabe
+ </summary>
+	<param name="user">Angemeldeter Benutzer</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.CreateBenutzerBindingHandler(System.Windows.Forms.BindingSource)">
+	<summary>
+ Die Eventhandler für die Bindingsource installieren
+ </summary>
+	<param name="bs"> Die BindingSource, auf deren Änderungen reagiert werden soll.</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.RefreshBenutzerBinding(System.Object,System.EventArgs)">
+	<summary>
+ Der Bindinghandler für die Anlagen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.RefreshAnlagen">
+	<summary>
+ Den DataGridView für die WB-Anlagen aktualisieren
+ Die Benutzer-ID in Member speichern
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.RefreshRollen">
+	<summary>
+ Den DataGridView für die Benutzerrollen aktualisieren
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.AnlagenDataGridView_CurrentCellChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die Aktuelle Zeile im DataGridView der Anlagen hat sich geändert
+ Die Anlagen-ID in Member speichern
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.DoTreeView">
+	<summary>
+ Die Baumdarstellung der Benutzer aktualisieren
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.trvBenutzer_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+	<summary>
+ Die Position in der BindingSourde mit der Position im TreeView synchronisieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.SaveData(System.Windows.Forms.BindingSource)">
+	<summary>
+ Änderungen in der Datenbank aktualisieren
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.NeuerBenutzer">
+	<summary>
+ Neuen Benutzer anlegen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.BenutzerBearbeiten">
+	<summary>
+ Aktuellen Benutzer bearbeiten
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.GetHistoryEntry(System.String,System.String,System.String,System.String)">
+	<summary>
+ Gibt einen formatierten String für die Historie zurück
+ </summary>
+	<param name="user">angemeldeter Benutzer</param>
+	<param name="col">der Spaltenname</param>
+	<param name="fromvalue">alter Wert</param>
+	<param name="tovalue">neuer Wert</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.EndeMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Den Dialo schliessen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.BenutzerNew_Click(System.Object,System.EventArgs)">
+	<summary>
+ Neuen Benutzer anlegen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.BenutzerDelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ Aktuellen Benutzer löschen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.BenutzerEdit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Aktuellen Benutzer bearbeiten
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.AnlageAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ Dem aktuellen Benutzer eine neue Anlage zuordnen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.AnlageRemove_Click(System.Object,System.EventArgs)">
+	<summary>
+ Beim aktuellen Benutzer die selektierte Anlage entfernen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.RolleAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der selektierten Anlage des aktuellen Benutzers eine neue Rolle zuordnen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.RolleRemove_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der selektierten Anlage des aktuellen Benutzers die selektierte Rolle entfernen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzer.HistoryMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Historie des aktuellen Benutzers anzeigen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterBearbeiten.DatenBearbeiten(System.Object,WBA.Admin.wbadminDataSet.WarmbehandlungRow)">
+	<summary>
+ Den Bearbeitungs-Dialog aufrufen
+ </summary>
+	<param name="sender"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterBearbeiten.OnClosing(System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Das Formular soll geschlossen werden
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterBearbeiten.DatenAusMaske">
+	<summary>
+ Überprüft die Eingaben im Formular, und liefert im Erfolgsfall
+ ein fix-und-fertiges DataRow-Objekt aus den Eingabefeldern zurück.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterBearbeiten.DatenInMaske(WBA.Admin.wbadminDataSet.WarmbehandlungRow)">
+	<summary>
+ Lädt die Daten aus der DataRow in die Maske
+ Bei neuem Parameter Datensatz werden die Felder mit Leerstrings vorbesetzt
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterBearbeiten.FormParameterBearbeiten_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ Die Checkbox für Freigabe entsprechend aktivieren/deaktivieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterBearbeiten.FormParameterBearbeiten_Activated(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular erhält den Fokus
+ Das erste Feld hat den Fokus und der gesamte Inhalt ist markiert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.Logging.WriteEntry(System.String,System.Diagnostics.TraceEventType,System.Int32)">
+	<summary>
+ Einen Eintrag in das XML-Log schreiben
+ </summary>
+	<param name="Entry">Die Nachricht</param>
+	<param name="EventType">Der TraceEventType</param>
+	<param name="Id">Die Id</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.ShowDialog(WBA.Admin.Benutzer)">
+	<summary>
+ Überladen für die Parameterübergabe
+ </summary>
+	<param name="user">Angemeldeter Benutzer</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.FormParameter_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.SaveData(System.Windows.Forms.BindingSource)">
+	<summary>
+ Änderungen in der Datenbank aktualisieren
+ </summary>
+	<param name="bs">Übergabe der entsprechenden BindingSource</param>
+	<returns>Anzahl der betroffenen Datensätze</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.NeuerParameter">
+	<summary>
+ Neuen Parameter Datensatz anlegen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.ParameterBearbeiten">
+	<summary>
+ Gewählten Parameter Datensatz bearbeiten
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.ParameterDetailsBearbeiten">
+	<summary>
+ Parameter des gewählten Datensatzes bearbeiten
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.MacheParameter(System.String)">
+	<summary>
+ Für den gerade angelegten Parameter Datensatz den Eintrag in der Detailtabelle erzeugen
+ </summary>
+	<param name="prgName"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.GetHistoryEntry(System.String,System.String,System.String,System.String)">
+	<summary>
+ Gibt einen formatierten String für die Historie zurück
+ </summary>
+	<param name="user">angemeldeter Benutzer</param>
+	<param name="col">der Spaltenname</param>
+	<param name="fromvalue">alter Wert</param>
+	<param name="tovalue">neuer Wert</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.KopiereWarmbehandlung(System.String)">
+	<summary>
+ Eine Warmbehandlungsvorschrift unter neuem Namen kopieren
+ </summary>
+	<param name="name">der neue Name</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.DoTreeView">
+	<summary>
+ Die Baumdarstellung der Parameter aktualisieren
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.RefreshParameter">
+	<summary>
+ Die Parameter in den Anzeigelabels formatieren
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.WarmbehandlungTreeView_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+	<summary>
+ Die Position in der BindingSourde mit der Position im TreeView synchronisieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.DialogSchliessen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der Dialog wird geschlossen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.BearbeitenNeueParameter_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ein neuer Parameter Datensatz soll angelegt werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.BearbeitenAendernParameter_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der aktuell gewählte Parameter Datensatz soll bearbeitet werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.BearbeitenLoeschenParameter_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der aktuell gewählte Parameter Datensatz soll gelöscht werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.BearbeitenKopierenParameter_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die selektierte Warmbehandlungsvorschrift unter neuem Namen kopieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.BearbeitenParameterDetails_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Parameter des aktuell gewählten Datensatzes sollen bearbeitet werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameter.AnzeigenHistorie_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die History für die aktuelle WB-Vorschrift anzeigen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ShowDialog(WBA.Admin.Benutzer)">
+	<summary>
+ Überladen für die Parameterübergabe
+ </summary>
+	<param name="user">Angemeldeter Benutzer</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.FormProgramm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.Ende_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der Dialog wird geschlossen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammNew_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ein neues Programm soll angelegt werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammEdit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Das aktuell gewählte Programm soll bearbeitet werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammDelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ Das aktuell gewählte Programm soll gelöscht werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammCopy_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die selektierte Warmbehandlungsvorschrift unter neuem Namen kopieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.History_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die History für die aktuelle WB-Vorschrift anzeigen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.KopiereWarmbehandlung(System.String)">
+	<summary>
+ Eine Warmbehandlungsvorschrift unter neuem Namen kopieren
+ </summary>
+	<param name="name">der neue Name</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.SaveData(System.Windows.Forms.BindingSource)">
+	<summary>
+ Änderungen in der Datenbank aktualisieren
+ </summary>
+	<param name="bs">Übergabe der entsprechenden BindingSource</param>
+	<returns>Anzahl der betroffenen Datensätze</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.NeuesProgramm">
+	<summary>
+ Es wird ein neues Programm angelegt und nach dem Speichern
+ werden für dieses Programm die Abschnitte angelegt
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammBearbeiten">
+	<summary>
+ Gewähltes Programm bearbeiten
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.MacheAbschnitte(System.String)">
+	<summary>
+ Für das gerade angelegte Programm die Abschnitte erzeugen
+ </summary>
+	<param name="prgName"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.UpdateChanges(System.Int32,System.Boolean)">
+	<summary>
+ Update Action Delegate
+ </summary>
+	<param name="id"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.DoTreeView">
+	<summary>
+ Die Baumdarstellung der Programme aktualisieren
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.CreateChart">
+	<summary>
+ Das Chart erzeugen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.DoChart(System.Int32)">
+	<summary>
+ Die grafische Darstellung des Programms aktualisieren
+ </summary>
+	<param name="wbId">Aktuell gewählte Warmbehandlung</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ChartProgramm_Customize(System.Object,System.EventArgs)">
+	<summary>
+ Die Labels der Zeitachse benutzerdefiniert formatieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ChartProgramm_GetToolTipText(System.Object,System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs)">
+	<summary>
+ Text für Datenpunkt-Tooltips zuweisen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ChartProgramm_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Bei Mausbewegung das Erscheinungsbild des entsprechenden Datenpunktes ändern
+ Das entsprechende Segment wir in rot dargestellt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.WarmbehandlungTreeView_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+	<summary>
+ Die Position in der BindingSourde mit der Position im TreeView synchronisieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.DoListView(System.Int32)">
+	<summary>
+ Den ListView aktualisieren
+ Die Daten der einzelnen Programm Abschnitte anzeigen
+ </summary>
+	<param name="wbId"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammListView_ColumnWidthChanging(System.Object,System.Windows.Forms.ColumnWidthChangingEventArgs)">
+	<summary>
+ Verhindert das Verändern der Spaltenbreite
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.FilterComboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die Anzeige im TreeView filtern
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.WarmbehandlungBindingSource_PositionChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die aktuelle Position in der BindingSource "Warmbehandlung" hat sich geändert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.ProgrammBindingSource_PositionChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die aktuelle Position in der BindingSource "Programm" hat sich geändert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgramm.CollapseButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Abschnitte-Tabelle anzeigen/verbergen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.FormAuftrag_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.RefreshAuftrag">
+	<summary>
+ Der Auftrag Binding Handler
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.EndeMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ende wurde angeklickt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.AuftragNew_Click(System.Object,System.EventArgs)">
+	<summary>
+ Auftrag/Neu wurde angeklickt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.FilterButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Bauteile filtern
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.FilterComboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Dier Index der Filter ComboBox hat sich geändert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftrag.FilterComboBox_DropDownClosed(System.Object,System.EventArgs)">
+	<summary>
+ Die DropDown Liste der ComboBox wurde geschlossen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftragBearbeiten.OnClosing(System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Überschriebene Methode "OnClosing"
+ Wird aufgerufen, wenn das Formular geschlossen werden soll.
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftragBearbeiten.AuftragBearbeiten(WBA.Admin.wbadminDataSet,WBA.Admin.Benutzer,WBA.Admin.wbadminDataSet.AuftragRow)">
+	<summary>
+ Auftrag Neu oder bearbeiten
+ </summary>
+	<param name="dataset">das DataSet des aufrufenden Formulars</param>
+	<param name="user">der angemeldete Bnutzer </param>
+	<param name="row">eine neue oder zu bearbeitende Row des aufrufenden Formulars</param>
+	<returns>eine neue Auftrag Row oder Nothing</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftragBearbeiten.DatenAusMaske">
+	<summary>
+ Überprüft die Eingaben im Formular
+ </summary>
+	<returns>eine neue Auftrag Row oder Nothing</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftragBearbeiten.DatenInMaske(WBA.Admin.wbadminDataSet.AuftragRow)">
+	<summary>
+ Lädt die Daten aus der DataRow in die Maske
+ Bei neuem Benutzer werden die Felder mit Leerstrings vorbesetzt
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftragBearbeiten.TextBox_PreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+ Mit 'Enter' zum nächsten Eingabefeld schalten
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAuftragBearbeiten.OnlyNumbers(System.String)">
+	<summary>
+ Prüft den angegebenen Text, ob dieser nur aus Zahlen besteht
+ </summary>
+	<param name="Text">String, der gerprüft werden soll.</param>
+	<returns>True, wenn der String nur aus Zahlen besteht, andernfalls False.</returns>
+</member><member name="M:WBA.Admin.FormBauteilWarmbehandlung.AddWarmbehandlung(System.Int32,WBA.Admin.wbadminDataSet@)">
+	<summary>
+ Dem aktuell gewählten Bauteil eine WB-Vorschrift hinzufügen
+ </summary>
+	<param name="bid"> Das aktuell gewählte Bauteil </param>
+	<param name="ds"> Das DataSet </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilWarmbehandlung.cbxFilter_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die Anzeige im DataGridView filtern
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilWarmbehandlung.GetWarmbehandlung(System.Int32)">
+	<summary>
+ Die nicht zugeordneten WB-Vorschriften holen
+ </summary>
+	<param name="Filter"> -1 = Alle, 0 = Lösungsglühen, 1 = Weichglühen, 2 = Warmauslagern</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilWarmbehandlung.FormBauteilWarmbehandlung_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:WBA.Admin.wbadminDataSet.AnlageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BauteilDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BauteilWarmbehandlungDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerAnlageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerRolleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ParameterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ProgrammDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.RolleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.WarmbehandlungDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ChargeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.HaltezeitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.InfoMesswertDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.MaximumMesswertDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.MinimumMesswertDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ReglerMesswertDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.WasserMesswertDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.AuftragDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.AnlageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BauteilRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BauteilWarmbehandlungRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerAnlageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerRolleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ParameterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ProgrammRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.RolleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.WarmbehandlungRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ChargeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.HaltezeitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.InfoMesswertRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.MaximumMesswertRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.MinimumMesswertRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ReglerMesswertRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.WasserMesswertRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.AuftragRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.AnlageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BauteilRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BauteilWarmbehandlungRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerAnlageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.BenutzerRolleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ParameterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ProgrammRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.RolleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.WarmbehandlungRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ChargeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.HaltezeitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.InfoMesswertRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.MaximumMesswertRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.MinimumMesswertRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.ReglerMesswertRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.WasserMesswertRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet.AuftragRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.AnlageTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.BauteilTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.BauteilWarmbehandlungTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.BenutzerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.BenutzerAnlageTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.BenutzerRolleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.ParameterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.ProgrammTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.RolleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.WarmbehandlungTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.ChargeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.HaltezeitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.InfoMesswertTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.MaximumMesswertTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.MinimumMesswertTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.ReglerMesswertTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.WasserMesswertTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.AuftragTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.QueriesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WBA.Admin.wbadminDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WBA.Admin.wbadminDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WBA.Admin.wbadminDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.UpdateAll(WBA.Admin.wbadminDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:WBA.Admin.wbadminDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:WBA.Admin.FormAnmeldung.OK_Button_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der OK-Button wurde angeklickt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAnmeldung.Cancel_Button_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der Cancel-Button wurde angeklickt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAnmeldung.GetBenutzer">
+	<summary>
+ Anmeldedialog anzeigen und den Benutzer über die Ausweisnummer ermitteln
+ </summary>
+	<returns> Ein Benutzerobjekt oder Nothing </returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAnmeldung.FormAnmeldung_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAnmeldung.FormAnmeldung_Activated(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wurde aktiviert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormAnmeldung.tbxAusweis_PreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+ Tastendrücke bearbeiten, während die TextBox den Fokus hat
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilBearbeiten.DatenBearbeiten(WBA.Admin.wbadminDataSet,WBA.Admin.wbadminDataSet.BauteilRow)">
+	<summary>
+ Den Bearbeitungs-Dialog aufrufen
+ </summary>
+	<param name="dataSet"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilBearbeiten.OnClosing(System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Das Formular soll geschlossen werden
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilBearbeiten.DatenAusMaske">
+	<summary>
+ Überprüft die Eingaben im Formular, und liefert im Erfolgsfall
+ ein fix-und-fertiges DataRow-Objekt aus den Eingabefeldern zurück.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteilBearbeiten.DatenInMaske(WBA.Admin.wbadminDataSet.BauteilRow)">
+	<summary>
+ Lädt die Daten aus der DataRow in die Maske
+ Bei neuem Bauteil werden die Felder mit Leerstrings vorbesetzt
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.FormCharge_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.ChargeVerzeichnisButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der Verzeichnis Button wurde angeklickt
+ Verzeichnis für den Export wählen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.EndeMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Das Ende MenuItem wurde angeklickt
+ Die Werte aus den Komponenten in den Settings speichern
+ und den Dialog schließen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.ExportMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Das Export MenuItem wurde angeklickt
+ Die Messwerte in CSV Dateien exportieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.EnterButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der Enter Button wurde angeklickt
+ Die Chargennummer bilden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.AnlageComboBox_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die Auswahl in der Anlage ComboBox hat sich geändert
+ Die Kennzeichen ComboBox entsprechend füllen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.Write_CSV(System.String,System.String)">
+	<summary>
+ Die CSV-Datei schreiben
+ Es wird ein Verzeichnis unter dem Namen der Chargennummer angelegt
+ Darunter werden die einzelnen Messwertdateien abgelegt
+ </summary>
+	<param name="dateiname">Der Name der entsprechenden Messwertdatei</param>
+	<param name="content">Der Inhalt der Datei im CSV-Format</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.Messwerte_To_CSV(System.Data.DataTable,System.Int32)">
+	<summary>
+ Die Messwerte in CSV wandeln
+ Als Separator wird ";" verwendet, Zeilenende = CR
+ </summary>
+	<param name="DT">Die DataTable</param>
+	<param name="count">Die Anzahl der Messwerte</param>
+	<returns>Den CSV-String</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMesswerte.Haltezeit_To_CSV(System.Data.DataTable)">
+	<summary>
+ Die Haltezeiten in CSV wandeln
+ Als Separator wird ";" verwendet, Zeilenende = CR
+ </summary>
+	<param name="DT">Die DataTable</param>
+	<returns>Den CSV-String</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.Benutzer.CodeCheck(System.Int32[])">
+	<summary>
+ Überprüft die als Parameter-Array übergebenen Codes
+ und gibt entsprechende Meldungen aus
+ </summary>
+	<param name="p"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormVorschriftKopieren.FormVorschriftKopieren_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ Textboxen setzen und 
+ alle Vorschrift-Namen in Array
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormVorschriftKopieren.FormVorschriftKopieren_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Das Formular soll geschlossen werden
+ Den neuen Namen auf Gültigkeit prüfen
+ Der Dialog kann bei ungültigem Namen nicht geschlossen werden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormVorschriftKopieren.CheckName">
+	<summary>
+ Die Namensüberprüfung durchführen
+ </summary>
+	<returns>den Namen</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormVorschriftKopieren.GetName(System.Object,System.String)">
+	<summary>
+ Den neuen Namen über den Dialog abfragen
+ </summary>
+	<param name="sender">das Dataset</param>
+	<param name="name">der alte Name</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormHistory.ShowHistory(System.Windows.Forms.BindingSource@)">
+	<summary>
+ Die History für Benutzer, Bauteil, Warmbehandlung anzeigen
+ </summary>
+	<param name="bs">Die entsprechende BindingSource</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormHistory.ShowHistory(System.Int32,System.Int32,System.Windows.Forms.BindingSource@,WBA.Admin.wbadminDataSet@)">
+	<summary>
+ Die History für BauteilWarmbehandlung (EMP) anzeigen
+ </summary>
+	<param name="Bauteil_Id">Die Id des aktuell gewählten Bauteils</param>
+	<param name="Warmbehandlung_Id">Die Id der aktuell gewählten Warmbehandlung</param>
+	<param name="bs">Die entsprechende BindingSource</param>
+	<param name="ds">Das Dataset</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormHistory.btnOk_Click(System.Object,System.EventArgs)">
+	<summary>
+ Der OK-Button wurde angeklickt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.SQLServerIsOnline(System.String)">
+	<summary>
+ Prüft, ob der SQL-Server erreichbar ist
+ Die eigentliche Prüfung läuft im Hintergrund-Thread
+ </summary>
+	<param name="settingName">Der Name der Variablen in den Settings</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.FormMain_Shown(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird sichtbar
+ Die Verbindung zur Datenbank testen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.Button_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ein Button wurde angeklickt
+ Nach Anmeldung den enstsprechenden Dialog aufrufen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.HilfeButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Hilfe aufrufen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.MesswerteButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Messwerte einer Charge nach CSV exportieren
+ Berechtigung: Administrator und Qualitätssicherung
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.EndeButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Anwendung beenden
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.ProgrammMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Das Programm MenuItem wurde angeklickt
+ Den Programm Dialog aufrufen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.LoesungsgluehenMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Das Lösungsglühen MenuItem wurde angeklickt
+ Den Parameter Dialog aufrufen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.ConnectionTimer_Tick(System.Object,System.EventArgs)">
+	<summary>
+ Die Timerroutine für die Überprüfung der Datenbankverbindung
+ Der Fortschrittsbalken wird aktualisiert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.ConnectionWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ Die Testverbindung zur Datenbank läuft im Hintergrund-Thread
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormMain.ConnectionWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ Ist der Hintergrund-Thread fertig, dann den Status zurückliefern
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:WBA.Admin.ReleaseAndLock.Anlage">
+	<summary>
+ Die Anlagentabelle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:WBA.Admin.ReleaseAndLock.Release">
+	<summary>
+ Die Freigabe
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:WBA.Admin.ReleaseAndLock.Lock">
+	<summary>
+ Die Sperre
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:WBA.Admin.ReleaseAndLock.CanRelease">
+	<summary>
+ Freigabe-Checkbox aktivieren/deaktivieren
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:WBA.Admin.ReleaseAndLock.CanLock">
+	<summary>
+ Sperre-Checkbox aktivieren/deaktivieren
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.ReleaseAndLock.#ctor">
+	<summary>
+ Der Konstruktor
+ Die Controls in Array's einlesen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.ReleaseAndLock.FreigabeCheckBox_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Der Zustand der Freigabe-Checkbox hat sich geändert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.ReleaseAndLock.SperreCheckBox_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Der Zustand der Sperre-Checkbox hat sich geändert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.ReleaseAndLock.ReleaseAndLock_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Das OnPaint-Ereignis
+ 3D-Linie unter den Überschriften zeichnen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterDetailsBearbeiten.DatenAusMaske">
+	<summary>
+ Überprüft die Eingaben im Formular, und liefert im Erfolgsfall
+ ein fix-und-fertiges DataRow-Objekt aus den Eingabefeldern zurück.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormParameterDetailsBearbeiten.DatenInMaske(WBA.Admin.wbadminDataSet.ParameterRow)">
+	<summary>
+ Lädt die Daten aus der DataRow in die Maske
+ Bei neuem Parameter Datensatz werden die Felder mit Leerstrings vorbesetzt
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="P:WBA.Admin.My.Resources.Resources.ResourceManager">
+	<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member><member name="P:WBA.Admin.My.Resources.Resources.Culture">
+	<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member><member name="P:WBA.Admin.My.Resources.Resources.collapse_left">
+	<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WBA.Admin.My.Resources.Resources.collapse_right">
+	<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WBA.Admin.My.Resources.Resources.OpenFolder">
+	<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WBA.Admin.My.Resources.Resources.wbadmin">
+	<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member><member name="T:WBA.Admin.My.Resources.Resources">
+	<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member><member name="M:WBA.Admin.FormBauteil.FormBauteil_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.ShowDialog(WBA.Admin.Benutzer)">
+	<summary>
+ Überladen für die Parameterübergabe
+ </summary>
+	<param name="user">Angemeldeter Benutzer</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.Ende_Click(System.Object,System.EventArgs)">
+	<summary>
+ Den Bauteil-Dialog schliessen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.BauteilNew_Click(System.Object,System.EventArgs)">
+	<summary>
+ Neues Bauteil anlegen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.BauteilEdit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Selektiertes Bauteil bearbeiten
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.BauteilDelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ Selektiertes Bauteil löschen
+ Löschen nur möglich, wenn das Bauteil keine Verknüpfungen mit Vorschriften hat
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.HistoryBauteil_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Historie für das Bauteil anzeigen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.HistoryEMP_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Historie für die Erstmuster anzeigen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.CreateBindingHandler(System.Windows.Forms.BindingSource)">
+	<summary>
+ Die Eventhandler für die Bauteil Bindingsource installieren
+ </summary>
+	<param name="bs"> Die BindingSource, auf deren Änderungen reagiert werden soll.</param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.RefreshBauteilBinding(System.Object,System.EventArgs)">
+	<summary>
+ Der Bindinghandler für die Warmbehandlungs-Vorschriften
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.RefreshWarmbehandlung">
+	<summary>
+ Den DataGridView für die WB-Vorschriften aktualisieren
+ Die Benutzer-ID in Member speichern
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.WarmbehandlungDataGridView_SelectionChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die Auswahl im DataGridView der WB-Vorschriften hat sich geändert
+ Die Anzeigefelder für die Erstmusterprüfung entsprechend aktualisieren
+ Die aktuelle Warmbehandlungs-Id und die entsprechende Zeile aus der Tabelle "BauteilWarmbehandlung"
+ wird in Membervariablen gespeichert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.SaveData(System.Windows.Forms.BindingSource)">
+	<summary>
+ Änderungen in der Datenbank aktualisieren
+ </summary>
+	<param name="bs">Übergabe der entsprechenden BindingSource</param>
+	<returns>Anzahl der betroffenen Datensätze</returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.NeuesBauteil">
+	<summary>
+ Es wird ein neues Bauteil angelegt
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.BauteilBearbeiten">
+	<summary>
+ Gewähltes Bauteil bearbeiten
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.GetHistoryEntry(System.String,System.String,System.String,System.String)">
+	<summary>
+ Gibt einen formatierten String für die Historie zurück
+ </summary>
+	<param name="user">angemeldeter Benutzer</param>
+	<param name="col">der Spaltenname</param>
+	<param name="fromvalue">alter Wert</param>
+	<param name="tovalue">neuer Wert</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBauteil.FilterButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Bauteile filtern
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerAnlagenRollen.FormBenutzerAnlagenRollen_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerAnlagenRollen.AddAnlage(System.Int32,System.String,WBA.Admin.wbadminDataSet@)">
+	<summary>
+ Dem aktuellen Benutzer eine Anlage zuordnen
+ </summary>
+	<param name="uid">Der aktuell gewählte Benutzer</param>
+	<param name="ds">Referenz auf das Dataset</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerAnlagenRollen.AddRolle(System.Int32,System.Int32,System.String,System.String,WBA.Admin.wbadminDataSet@)">
+	<summary>
+ Der selektierten Anlage des aktuellen Benutzers eine Rolle zuordnen
+ </summary>
+	<param name="uid">Der aktuell gewählte Benutzer</param>
+	<param name="wbaid">Die aktuell gewählte Anlage</param>
+	<param name="ds">Referenz auf das Dataset</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerBearbeiten.DatenBearbeiten(WBA.Admin.wbadminDataSet,WBA.Admin.Benutzer,WBA.Admin.wbadminDataSet.BenutzerRow)">
+	<summary>
+ Benutzer Neu oder bearbeiten
+ </summary>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerBearbeiten.FormBenutzerBearbeiten_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ Benutzer sperren/entsperren nur mit der entsprechenden Berechtigung
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerBearbeiten.OnClosing(System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Überschriebene Methode "OnClosing"
+ Wird aufgerufen, wenn das Formular geschlossen werden soll.
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerBearbeiten.DatenAusMaske">
+	<summary>
+ Überprüft die Eingaben im Formular, und liefert im Erfolgsfall
+ ein fix-und-fertiges DataRow-Objekt aus den Eingabefeldern zurück.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormBenutzerBearbeiten.DatenInMaske(WBA.Admin.wbadminDataSet.BenutzerRow)">
+	<summary>
+ Lädt die Daten aus der DataRow in die Maske
+ Bei neuem Benutzer werden die Felder mit Leerstrings vorbesetzt
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.ShowDialog(WBA.Admin.wbadminDataSet,System.Windows.Forms.BindingSource)">
+	<summary>
+ Überladene Version von "ShowDialog"
+ </summary>
+	<param name="ds">das Dataset</param>
+	<param name="bs">die Programm BindingSource</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.FormMain_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ Abschnittslisten erzeugen
+ DataGridView formatieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.AbschnittDataGridView_SelectionChanged(System.Object,System.EventArgs)">
+	<summary>
+ Die Auswahl im DataGridView hat sich geändert
+ Den Zeilenindex merken
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.DeleteButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Eine Zeile in der Abschnittsliste löschen
+ Die Liste wird auf MaxAbschnitte erweitert
+ und die Abschnitte werden neu durchnummeriert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.InsertButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Eine neue Zeile in die Abschnittsliste einfügen
+ und zwar vor der selektierten Zeile
+ Die Liste wird auf MaxAbschnitte verkürzt
+ und die Abschnitte werden neu durchnummeriert
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.EnumerateAndRefresh">
+	<summary>
+ Durchnummerieren der Abschnittsliste
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.AbschnittDataGridView_CellValidating(System.Object,System.Windows.Forms.DataGridViewCellValidatingEventArgs)">
+	<summary>
+ Das Zellen Validating-Ereignis des DataGridView
+ Auf Eingabegrenzen überprüfen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.AbschnittDataGridView_CellEndEdit(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ Das Zellen EndEdit des DataGridView
+ Den Fehlertext löschen, wenn ESC gedrückt wurde
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammAbschnittBearbeiten.FormAbschnitteBearbeiten_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Der Dialog soll geschlossen werden
+ Die geänderten Zeilen feststellen
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammBearbeiten.DatenBearbeiten(System.Object,WBA.Admin.wbadminDataSet.WarmbehandlungRow)">
+	<summary>
+ Den Bearbeitungs-Dialog aufrufen
+ </summary>
+	<param name="sender"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammBearbeiten.OnClosing(System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Das Formular soll geschlossen werden
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammBearbeiten.DatenAusMaske">
+	<summary>
+ Überprüft die Eingaben im Formular, und liefert im Erfolgsfall
+ ein fix-und-fertiges DataRow-Objekt aus den Eingabefeldern zurück.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammBearbeiten.DatenInMaske(WBA.Admin.wbadminDataSet.WarmbehandlungRow)">
+	<summary>
+ Lädt die Daten aus der DataRow in die Maske
+ Bei neuem Programm werden die Felder mit Leerstrings vorbesetzt
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammBearbeiten.FormProgrammBearbeiten_Load(System.Object,System.EventArgs)">
+	<summary>
+ Das Formular wird geladen
+ Die Checkboxen für Freigabe und Gesperrt entsprechend aktivieren/deaktivieren
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WBA.Admin.FormProgrammBearbeiten.AbschnitteButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Die Abschnitte des aktuell gewählten Programms bearbeiten
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
